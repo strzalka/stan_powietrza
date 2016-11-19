@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2016 Tomasz Strzałka
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html>
+    <head>
+        <title>Stan powietrza</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script type="text/javascript" src="js/vendor/jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="js/vendor/knockout-3.4.1.js"></script>
+        <script type="text/javascript" src="js/convert-UNIX-timestamp.js"></script>
+        <script type="text/javascript" src="js/parseData.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div id="page"> 
+            <h1>Stan powietrza</h1>
+            <div id="data_container">
+                <div data-bind="text: title"></div>
+                <table>
+                <thead>
+                    <tr><th>Typ</th><th>Wartość</th></tr>
+                </thead>
+                <tbody data-bind="foreach: meas">
+                    <tr>
+                        <td data-bind="html: label"></td>
+                        <td data-bind="text: avg.max"></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </body>
+</html>
