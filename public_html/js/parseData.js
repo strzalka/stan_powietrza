@@ -22,6 +22,6 @@ var ViewModel = function(data) {
     this.meas = data.series;
 };
 
-$.getJSON( "http://bstyczen.edl.pl/smog/data.json" , function( result ){
-    ko.applyBindings(new ViewModel(result.data)); // This makes Knockout get to work
+$( document ).ready(function() {
+    ko.applyBindings(new ViewModel(JSONdata.data));
 });
