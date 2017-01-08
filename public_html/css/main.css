@@ -22,4 +22,155 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 html, body {padding: 0px; margin: 0px;}
 
 #page{
+    width: 641px;
+    height: 384px;
+    display: inline-block;
+    background-image:linear-gradient(180deg, rgba(15,192,208,1) 0, rgba(0,119,205,1) 100%);
 }
+
+#naglowek{
+    margin       : 0px;
+    border       : none;
+    padding      : 0px;
+    width        : 641px;
+    text-align   : center;
+}
+
+#naglowek2{
+    margin       : 0px;
+    border       : none;
+    width        : 59
+    heigth:      : 20px;
+    text-align   : right;
+    padding-top     : 0px;
+    padding-right   : 50px;
+    padding-bottom  : 0px;
+    padding-left    : 0px;
+
+}
+
+
+#stan{
+    margin       : 2px 40px 2px 40px;
+    border       : 1px solid black;
+    border-radius: 20px;
+    padding      : 0px;
+    width        : 541px;
+    heigth:      : 50px;
+    text-align   : center;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+#datacontainer{
+    margin       : 0px;
+    border       : none;
+    padding      : 0px 35px 0px 35px;
+    width        : 571px;
+    text-align   : center;
+    overflow:hidden;	
+}
+
+#div1 {
+    width: 161px;
+    height: 96px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    float:left;
+    clear: left;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+#div2 {
+    width: 161px;
+    height: 96px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    float:left;    
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+#div3 {
+    width: 161px;
+    height: 96px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    float:left;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+#zrodlo{
+ margin       : 0px;
+ border       : none;
+ padding      : 0px;
+ width        : 641px;
+ text-align   : left;
+}
+
+header
+{
+font-family: "Arial", Helvetica, sans-serif;
+font-size: 26px;	
+color: white;
+}
+
+header2
+{
+font-family: "Arial", Helvetica, sans-serif;
+font-size: 18px;
+color: rgb(177, 247, 240);
+}
+
+header3
+{
+font-family: "Arial", Helvetica, sans-serif;
+font-size: 14px;
+color: rgb(177, 247, 240);
+}
+
+stan1 
+{
+font-family: "Arial", Helvetica, sans-serif;
+font-size: 20px;
+color: white;
+}
+
+stan2 
+{
+font-family: "Arial", Helvetica, sans-serif;
+font-size: 44px;
+color: white;
+}
+
+tabela1
+{
+font-family: "Arial", Helvetica, sans-serif;
+font-size: 18px;
+color: white;
+}
+
+tabela2
+{
+font-family: "Arial", Helvetica, sans-serif;
+font-size: 32px;
+color: white;
+}
+
+tabela3
+{
+font-family: "Arial", Helvetica, sans-serif;
+font-size: 14px;
+color: white;
+}
+
+zrodlo1{
+font-family: "Arial", Helvetica, sans-serif;
+font-size: 16px;	
+color: white;
+}
+
+
