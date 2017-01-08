@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
 Copyright (C) 2016 Tomasz Strzałka
 
@@ -17,7 +17,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <html>
     <head>
-        <title>Stan powietrza</title>
+        <title>Stan powietrza </title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -29,24 +29,77 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
         <script type="text/javascript" src="js/parseData.js"></script>
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript">
+	function myfunction(a) {
+	       var a = 3;
+            } 
+	</script>
     </head>
     <body>
+	<meta charset="UTF-8">
         <div id="page"> 
-            <h1>Stan powietrza</h1>
-            <div id="data_container">
-                <div data-bind="text: title"></div>
-                <table>
-                <thead>
-                    <tr><th>Typ</th><th>Wartość</th></tr>
-                </thead>
-                <tbody data-bind="foreach: meas">
-                    <tr>
-                        <td data-bind="html: label"></td>
-                        <td data-bind="text: avg.max"></td>
-                    </tr>
-                </tbody>
-            </table>
-            </div>
-        </div>
+            <div id="naglowek">
+	    <header> Mielec - Biernackiego </header>
+	    </div>
+
+	    <div id="naglowek2">
+	    <header3 data-bind="text: czas">  </header3>
+	    </div>
+
+	    <div id="stan" data-bind="style:{background:kolor_ogolny}">
+	    <stan1> Stan powietrza </stan> <br>
+            <stan2 data-bind="text: jakosc_powietrza"></stan2>
+	    </div>
+	    
+	    <div id="datacontainer">
+            	<div id="div1" data-bind="style:{background:kolor_PM10}">
+	    	<tabela1> PM10 </tabela1> <br>
+                <tabela2 data-bind="text: ost_pom_PM10"></tabela2>
+		<tabela3> μg/m<sup>3</sup></tabela3> <br> <br> 
+		<tabela1> Pył zawieszony </tabela1>
+	    	</div> 
+
+		<div id="div2" data-bind="style:{background:kolor_PM25}">
+	        <tabela1> PM2.5 </tabela1> <br>
+                <tabela2 data-bind="text: ost_pom_PM25"></tabela2>
+		<tabela3> μg/m<sup>3</sup></tabela3> <br> <br>
+		<tabela1> Pył zawieszony </tabela1>
+	        </div>
+
+		<div id="div3" data-bind="style:{background:kolor_SO2}">
+	        <tabela1> SO<sub>2</sub> </tabela1> <br>
+		<tabela2 data-bind="text: ost_pom_SO2"></tabela2>
+		<tabela3> μg/m<sup>3</sup></tabela3> <br> <br>
+		<tabela1> Dwutlenek siarki </tabela1>
+	        </div>
+
+		<div id="div1" data-bind="style:{background:kolor_NO2}">
+	        <tabela1> NO<sub>2</sub> </tabela1> <br>
+		<tabela2 data-bind="text: ost_pom_NO2"></tabela2>
+		<tabela3> μg/m<sup>3</sup></tabela3> <br> <br>
+		<tabela1> Dwutlenek azotu </tabela1>
+	        </div>
+
+                <div id="div2" data-bind="style:{background:kolor_Ozon}">
+	    	<tabela1> O<sub>3</sub> </tabela1> <br> 
+		<tabela2 data-bind="text: ost_pom_Ozon"></tabela2>
+		<tabela3> μg/m<sup>3</sup></tabela3> <br> <br>
+		<tabela1> Ozon </tabela1>
+	    	</div>
+   
+	    	<div id="div3" data-bind="style:{background:kolor_bzn}">
+	    	<tabela1 > C<sub>6</sub>H<sub>6</sub> </tabela1> <br> 
+		<tabela2 data-bind="text: ost_pom_bzn"></tabela2>
+		<tabela3> μg/m<sup>3</sup></tabela3> <br> <br>
+		<tabela1> Benzen </tabela1>
+	    	</div>
+
+	    </div>
+            
+	    <div id="zrodlo">
+	    <tabela3> Źródło: WIOŚ Rzeszów </tabela3>
+	    </div>
+
+
     </body>
 </html>
